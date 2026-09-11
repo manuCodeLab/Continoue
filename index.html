@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Undamma</title>
+    <meta
+      name="description"
+      content="A romantic birthday surprise for my dear Undamma."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="locked">
+    <div id="passwordLock" class="password-lock" aria-live="polite">
+      <div class="password-box">
+        <p class="password-label">Enter the password</p>
+        <input id="passwordInput" type="password" maxlength="10" placeholder="Type the code" />
+        <button id="unlockBtn" class="cta-button primary">Open</button>
+        <p id="passwordError" class="password-error" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="loader" aria-live="polite" aria-label="Loading surprise">
+      <div class="loader-ring"></div>
+      <p>Loading your surprise...</p>
+    </div>
+
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+      ♫
+    </button>
+
+    <div class="progress-wrap" aria-label="Surprise progress">
+      <div class="progress-bar">
+        <span id="progressFill"></span>
+      </div>
+    </div>
+
+    <main class="surprise-page">
+      <section id="opening" class="panel opening-panel active">
+        <div class="panel-glow"></div>
+        <div class="content reveal">
+          <p class="eyebrow">For the love of my life</p>
+          <h1>Happy Birthday, My Dear Undamma ❤️</h1>
+          <p class="subtitle">Today is all about you...</p>
+          <button class="cta-button primary" data-scroll="message" id="openSurpriseBtn">
+            Open Your Surprise 🎁
+          </button>
+        </div>
+      </section>
+
+      <section id="message" class="panel message-panel">
+        <div class="content reveal">
+          <h2>A Few Words For You 💌</h2>
+          <div class="message-box">
+            <p>
+              Happy Birthday to the most special person in my life ❤️
+            </p>
+            <p>
+              I may not always have the perfect words to say how much you mean to
+              me, but I hope you always know how special you are to me.
+            </p>
+            <p>
+              Thank you for all the smiles, laughs, conversations, memories, and
+              little moments we've shared.
+            </p>
+            <p>
+              Today I just want to see you smile and remind you that you are truly
+              special to me.
+            </p>
+            <p>Happy Birthday once again, my dear Undamma ❤️</p>
+          </div>
+          <button class="cta-button secondary" data-scroll="story">
+            Continue ❤️
+          </button>
+        </div>
+      </section>
+
+      <section id="story" class="panel story-panel">
+        <div class="content reveal">
+          <h2>Our Little Story 📖</h2>
+          <div class="story-card">
+            <p>
+              Happy Birthday to the girl who became the most unexpected and beautiful part of my life ❤️
+            </p>
+            <p>
+              If someone had told me on my birthday that the girl who wished me that day would someday become this important to me, I honestly wouldn’t have believed them.
+            </p>
+            <p>
+              I had seen you in college before, but you were just someone I knew by face. I never thought much about it. I definitely never imagined that one simple birthday wish from you would become the beginning of our story.
+            </p>
+            <p>
+              But that day was different. You wished me, and somehow we started talking. I don't even know what happened to me that day, but I remember talking to you so much. 😂 I didn't expect myself to get so comfortable with you or to keep wanting to talk to you.
+            </p>
+            <p>
+              At that time, I had no idea where all of this was going. I wasn't thinking about love or relationships. I was just enjoying talking to you and getting to know you.
+            </p>
+            <p>
+              Then, slowly... day by day, our conversations became more important to me. I started looking forward to talking to you. I started caring about you. I started noticing the little things about you.
+            </p>
+            <p>
+              And somewhere between all those conversations, laughs, random talks, and the time we spent getting to know each other, something changed inside me.
+            </p>
+            <p>
+              I don't know exactly when it happened, but I realized that you weren't just another person in my life anymore.
+            </p>
+            <p>
+              You became <strong>my person.</strong> ❤️
+            </p>
+            <p>
+              The girl I never expected to get this close to became the girl I don't want to lose.
+            </p>
+            <p>
+              Sometimes I still think about how everything started—with just a birthday wish. It's crazy how one small moment can completely change your life.
+            </p>
+            <p>
+              And today, I just want you to know that I'm genuinely so grateful for that moment, for you, and for everything that came after it.
+            </p>
+            <p>
+              You are one of the most precious people in my life, and I really, really love you, undama. ❤️🥹
+            </p>
+            <p>
+              Happy Birthday, my love. 🎂❤️
+            </p>
+            <p>
+              I hope this is just the beginning of many more birthdays, memories, fights, laughs, stupid conversations, and beautiful moments together.
+            </p>
+            <p>
+              <strong>Our story may have started with a birthday wish, but I hope it never ends. ❤️</strong>
+            </p>
+          </div>
+          <div class="btn-row">
+            <button class="cta-button tertiary" data-scroll="gallery">
+              See Our Memories 📸
+            </button>
+            <button class="cta-button ghost" data-scroll="final">
+              One Last Thing 💌
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="panel gallery-panel">
+        <div class="content reveal">
+          <h2>Our Beautiful Memories 📸</h2>
+
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+      </section>
+
+      <section id="final" class="panel final-panel">
+        <div class="content reveal">
+          <div class="final-card">
+            <p class="final-line">And this is only the beginning... ❤️</p>
+            <p>
+              Thank you for being a beautiful part of my life.
+            </p>
+            <p>
+              I hope your birthday is filled with happiness, smiles, and everything
+              you deserve.
+            </p>
+            <p>Happy Birthday once again, Undamma 🎂❤️</p>
+            <p>Let's create many more memories together.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-hearts" aria-hidden="true">
+      <span>❤</span>
+      <span>❤</span>
+      <span>❤</span>
+      <span>❤</span>
+      <span>❤</span>
+      <span>❤</span>
+      <span>❤</span>
+      <span>❤</span>
+    </div>
+
+    <div id="lightbox" class="lightbox" aria-label="Image viewer" aria-hidden="true">
+      <button id="closeLightbox" class="lightbox-close" aria-label="Close preview">×</button>
+      <button id="prevImage" class="lightbox-nav prev" aria-label="Previous image">‹</button>
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="Expanded memory" />
+        <p id="lightboxCaption"></p>
+      </div>
+      <button id="nextImage" class="lightbox-nav next" aria-label="Next image">›</button>
+    </div>
+
+    <div id="voicePopup" class="voice-popup" aria-label="Voice note" aria-hidden="true">
+      <div class="voice-box">
+        <p class="voice-label">A little message for you 💌</p>
+        <audio id="voiceAudio" controls preload="auto" aria-label="Voice message">
+          <source src="audio/Recording.m4a" type="audio/mp4" />
+        </audio>
+        <button id="closeVoicePopup" class="cta-button primary voice-continue">Continue</button>
+      </div>
+    </div>
+
+    <audio id="birthdayAudio" preload="none" loop aria-label="Birthday music">
+      <source src="audio/WhatsApp Audio 2026-09-11 at 2.57.12 PM.mpeg" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
